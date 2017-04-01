@@ -32,16 +32,19 @@ public:
 
 	// Declaration function insert (non-recursive) 
 	// Inserts element in the BST
+	void insert(int value);
 	
 	// Declaration function totalNodes
 	// Returns the number of nodes in the BST
+	int totalNodes() const;
 
 	// Declaration overloaded function preorderTraversal
 	// Print all nodes in the BST in a preorder sequence
+	void preorderTraversal() const;
 
 	// Declaration overloaded function postorderTraversal
 	// Print all nodes in the BST in a postorder sequence
-
+	void postorderTraversal() const;
 			
 private:	
 	Node *root; //Pointer to the root
@@ -53,11 +56,14 @@ private:
 	void inorderTraversal(const Node* p) const;
 
 	// Declaration overloaded function totalNodes (recursive)
+	int totalNodes(const Node* p) const;
 
 	// Declaration overloaded function preorderTraversal (recursive)
+	void preorderTraversal(const Node* p) const;
 
 	// Declaration overloaded function postorderTraversal (recursive)
-	
+	void postOrderTraversal(const Node* p) const;
+
 };
 
 #endif
