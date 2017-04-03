@@ -22,7 +22,7 @@ public:
 
 	BST();
 	
-	void insert(int item); 
+	// void insert(int item); 
 	
 	void inorderTraversal() const;
 
@@ -62,7 +62,7 @@ private:
 	void preorderTraversal(const Node* p) const;
 
 	// Declaration overloaded function postorderTraversal (recursive)
-	void postOrderTraversal(const Node* p) const;
+	void postorderTraversal(const Node* p) const;
 
 };
 

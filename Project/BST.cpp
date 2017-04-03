@@ -129,19 +129,58 @@ void BST::insert(int value)
 // Definition function totalNodes
 int BST::totalNodes() const
 {
-	return (root != nullptr) ? totalNodes(root) : 0;
+	if (root == nullptr) return 0;
+	return totalNodes(root);
 }
 
 // Definition function totalNodes (recursive)
 int BST::totalNodes(const Node* p) const
 {
-	return (p != nullptr) ? 1 + totalNodes(p->llink) + totalNodes(p->rlink) : 0;
+	return (p != nullptr) ? (1 + totalNodes(p->llink) + totalNodes(p->rlink)) : 0;
 }
 
 // Definition overloaded function preorderTraversal
+void BST::preorderTraversal() const
+{
+	if (root == nullptr)
+		cerr << "There is no tree.";
+	else
+	{
+		preorderTraversal(root);
+	}
+}
 
 // Definition overloaded function preorderTraversal (recursive)
+void BST::preorderTraversal(const Node *p) const
+{
+	if (p != nullptr)
+	{
+		cout << p->data << " ";
+		preorderTraversal(p->llink);
+		preorderTraversal(p->rlink);
+	}
+}
 
 // Definition overloaded function postorderTraversal
+void BST::postorderTraversal() const
+{
+	if (root == nullptr)
+	{
+		cerr << "There is no tree.";
+	}
+	else
+	{
+		postorderTraversal(root);
+	}
+}
 
 // Definition overloaded function postorderTraversal (recursive)
+void BST::postorderTraversal(const Node *p) const
+{
+	if (p != nullptr)
+	{
+		postorderTraversal(p->llink);
+		postorderTraversal(p->rlink);
+		cout << p->data << " ";
+	}
+}

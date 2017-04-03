@@ -72,6 +72,14 @@ void testTree(const BST& bst)
 
 	//other testcases
 
+	// TEST: preorderTraversal
+	cout << "\nPreorder traversal: ";
+	bst.preorderTraversal();
+
+	// TEST: postorderTravesal
+	cout << "\nPostorder traversal: ";
+	bst.postorderTraversal();
+
 	//TEST: totalNodes
-	/*cout << "\nTotal nodes: " << bst.totalNodes();*/
+	cout << "\nTotal nodes: " << bst.totalNodes();
 }

@@ -1,0 +1,4 @@
+﻿  Main.cpp
+  BST.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Project.vcxproj -> \\Mac\Home\Desktop\Coding\OCC\Data Structures\Labs\lab_08_bst\x64\Debug\Project.exe
+  Project.vcxproj -> \\Mac\Home\Desktop\Coding\OCC\Data Structures\Labs\lab_08_bst\x64\Debug\Project.pdb (Partial PDB)
